@@ -66,14 +66,17 @@ def clean(raw_csv: Path = RAW_CSV) -> pd.DataFrame:
     # Age: valores absurdos no bruto (negativos, >100)
     df = df[df["Age"].between(18, 75)]
 
+    # Categóricas em minúsculo — API e treino precisam falar a mesma língua,
+    # senão o OneHotEncoder ignora silenciosamente valores com caixa diferente
+    for col in df.select_dtypes(include=["object", "str"]).columns:
+        df[col] = df[col].str.strip().str.lower()
+
     # Gender: texto livre -> male/female/other
-    df["Gender"] = (
-        df["Gender"].str.strip().str.lower().map(GENDER_MAP).fillna("other")
-    )
+    df["Gender"] = df["Gender"].map(GENDER_MAP).fillna("other")
 
     # Nulos
-    df["self_employed"] = df["self_employed"].fillna("No")
-    df["work_interfere"] = df["work_interfere"].fillna("Unknown")
+    df["self_employed"] = df["self_employed"].fillna("no")
+    df["work_interfere"] = df["work_interfere"].fillna("unknown")
 
     df.columns = [c.lower() for c in df.columns]
     return df

@@ -82,7 +82,7 @@ Exemplo de predição:
 ```bash
 curl -X POST http://127.0.0.1:8000/predict \
   -H "Content-Type: application/json" \
-  -d '{"age": 29, "gender": "male", "family_history": "yes", "work_interfere": "sometimes", "benefits": "yes", "care_options": "no", "remote_work": "no", "tech_company": "yes"}'
+  -d '{"age": 29, "gender": "male", "family_history": "yes", "work_interfere": "sometimes", "no_employees": "26-100", "benefits": "yes", "care_options": "no", "remote_work": "no", "tech_company": "yes"}'
 ```
 
 Resposta:
@@ -90,6 +90,8 @@ Resposta:
 ```json
 {"treatment": "yes", "probability": 0.81}
 ```
+
+![insomnia request](./insomnia_request.png)
 
 ## Estrutura do projeto
 

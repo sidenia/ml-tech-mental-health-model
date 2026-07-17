@@ -30,6 +30,11 @@ def predict_one(features: dict) -> dict:
     Retorna {"treatment": "yes"|"no", "probability": float}.
     """
     model = load_model()
-    X = pd.DataFrame([features])
+    # Mesma normalização do treino (src/data.py): categóricas em minúsculo.
+    # Sem isso, "Yes" vs "yes" zera a feature no OneHotEncoder sem avisar.
+    normalized = {
+        k: v.strip().lower() if isinstance(v, str) else v for k, v in features.items()
+    }
+    X = pd.DataFrame([normalized])
     proba = float(model.predict_proba(X)[0, 1])
     return {"treatment": "yes" if proba >= 0.5 else "no", "probability": round(proba, 3)}

@@ -115,6 +115,9 @@ Resposta:
 └── tests/                     # testes com pytest
 ```
 
+# Objetivo
+Entender o conceito de classifier (Classificação).
+
 ## Documentação
 
 - [Documentação técnica](docs/technical.md) — decisões de modelagem e porquês

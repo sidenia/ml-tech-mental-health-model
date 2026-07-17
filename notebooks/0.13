@@ -1,0 +1,33 @@
+Requirement already satisfied: pandas in c:\python312\lib\site-packages (3.0.3)
+Requirement already satisfied: numpy in c:\python312\lib\site-packages (2.2.2)
+Collecting matplotlib
+  Downloading matplotlib-3.11.0-cp312-cp312-win_amd64.whl.metadata (80 kB)
+     ---------------------------------------- 0.0/80.3 kB ? eta -:--:--     ----- ---------------------------------- 10.2/80.3 kB ? eta -:--:--     -------------- ----------------------- 30.7/80.3 kB 262.6 kB/s eta 0:00:01     --------------------------------- ---- 71.7/80.3 kB 491.5 kB/s eta 0:00:01     -------------------------------------- 80.3/80.3 kB 500.2 kB/s eta 0:00:00
+Collecting seaborn
+  Using cached seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\sidenia\appdata\roaming\python\python312\site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: tzdata in c:\python312\lib\site-packages (from pandas) (2024.1)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Downloading contourpy-1.3.3-cp312-cp312-win_amd64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading fonttools-4.63.0-cp312-cp312-win_amd64.whl.metadata (121 kB)
+     ---------------------------------------- 0.0/121.0 kB ? eta -:--:--     -------------------------------------- 121.0/121.0 kB 3.5 MB/s eta 0:00:00
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Downloading kiwisolver-1.5.0-cp312-cp312-win_amd64.whl.metadata (5.2 kB)
+Requirement already satisfied: packaging>=20.0 in c:\python312\lib\site-packages (from matplotlib) (24.2)
+Requirement already satisfied: pillow>=9 in c:\python312\lib\site-packages (from matplotlib) (10.4.0)
+Requirement already satisfied: pyparsing>=3 in c:\python312\lib\site-packages (from matplotlib) (3.2.1)
+Requirement already satisfied: six>=1.5 in c:\python312\lib\site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Downloading matplotlib-3.11.0-cp312-cp312-win_amd64.whl (9.3 MB)
+   ---------------------------------------- 0.0/9.3 MB ? eta -:--:--   --- ------------------------------------ 0.9/9.3 MB 28.4 MB/s eta 0:00:01   -------- ------------------------------- 1.9/9.3 MB 24.5 MB/s eta 0:00:01   ------------- -------------------------- 3.2/9.3 MB 22.4 MB/s eta 0:00:01   ----------------- ---------------------- 4.1/9.3 MB 23.8 MB/s eta 0:00:01   --------------------- ------------------ 5.0/9.3 MB 24.8 MB/s eta 0:00:01   ------------------------- -------------- 6.0/9.3 MB 23.9 MB/s eta 0:00:01   ------------------------------- -------- 7.3/9.3 MB 24.6 MB/s eta 0:00:01   ----------------------------------- ---- 8.3/9.3 MB 24.2 MB/s eta 0:00:01   ---------------------------------------  9.3/9.3 MB 24.8 MB/s eta 0:00:01   ---------------------------------------- 9.3/9.3 MB 23.0 MB/s eta 0:00:00
+Using cached seaborn-0.13.2-py3-none-any.whl (294 kB)
+Downloading contourpy-1.3.3-cp312-cp312-win_amd64.whl (226 kB)
+   ---------------------------------------- 0.0/226.6 kB ? eta -:--:--   --------------------------------------- 226.6/226.6 kB 14.4 MB/s eta 0:00:00
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.63.0-cp312-cp312-win_amd64.whl (2.3 MB)
+   ---------------------------------------- 0.0/2.3 MB ? eta -:--:--   ------------------------ --------------- 1.4/2.3 MB 30.1 MB/s eta 0:00:01   ---------------------------------------- 2.3/2.3 MB 24.8 MB/s eta 0:00:00
+Downloading kiwisolver-1.5.0-cp312-cp312-win_amd64.whl (73 kB)
+   ---------------------------------------- 0.0/73.6 kB ? eta -:--:--   ---------------------------------------- 73.6/73.6 kB ? eta 0:00:00
+Installing collected packages: kiwisolver, fonttools, cycler, contourpy, matplotlib, seaborn

@@ -1,0 +1,31 @@
+# Dados — nunca commitar dado bruto; script data.py baixa
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Modelos treinados (grandes; gerar via train.py)
+models/*.joblib
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs de monitoramento
+monitoring/predictions.log
+*.sqlite
+
+# IDE / SO
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Credenciais Kaggle (ficam em ~/.kaggle, mas por garantia)
+kaggle.json
